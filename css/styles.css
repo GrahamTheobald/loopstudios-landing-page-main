@@ -301,8 +301,18 @@ body .footer__b p {
     background-size: cover;
     z-index: -1;
   }
-  body .main__grid-item:hover::before {
-    filter: grayscale(80%) brightness(130%) saturate(30%);
+  body .main__grid-item:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: hsla(0deg, 0%, 100%, 0.8);
+  }
+  body .main__grid-item:hover {
+    cursor: pointer;
   }
   body .main__grid-item:hover h3 {
     color: var(--Black);
