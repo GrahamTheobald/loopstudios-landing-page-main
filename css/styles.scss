@@ -16,6 +16,7 @@
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 ul {
@@ -167,6 +168,7 @@ body {
             flex-direction: column;
             gap: 1rem;
             &-menu {
+                letter-spacing: normal;
                 color: var(--White);
                 text-align: center;
                 display: flex;
@@ -191,4 +193,4 @@ body {
         }
     }
 }
-
+@import 'desktop.scss';
